@@ -37,7 +37,7 @@ console.log("Root Hash: ", rootHash);
 // ✅ Positive verification of address
 const claimingAddress = leafNodes[0];
 // ❌ Change this address to get a `false` verification
-// const claimingAddress = "0X5B38DA6A701C568545DCFCB03FCB875F56BEDDC6";
+// const claimingAddress = keccak256("0X5B38DA6A701C568545DCFCB03FCB875F56BEDDD6");
 
 // `getHexProof` returns the neighbour leaf and all parent nodes hashes that will
 // be required to derive the Merkle Trees root hash.
