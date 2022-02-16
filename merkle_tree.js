@@ -13,7 +13,7 @@ let whitelistAddresses = [
     "0X6E21D37E07A6F7E53C7ACE372CEC63D4AE4B6BD0",
     "0X09BAAB19FC77C19898140DADD30C4685C597620B",
     "0XCC4C29997177253376528C05D3DF91CF2D69061A",
-    "0X575BA832DBA7BDC369840B4A7672976B024742A1"
+    "0xdD870fA1b7C4700F2BD7f44238821C26f7392148" // The address in remix
   ];
 
 // 3. Create a new array of `leafNodes` by hashing all indexes of the `whitelistAddresses`
@@ -35,7 +35,7 @@ console.log("Root Hash: ", rootHash);
 // required to derive the root hash of the Merkle Tree
 
 // ✅ Positive verification of address
-const claimingAddress = leafNodes[0];
+const claimingAddress = leafNodes[6];
 // ❌ Change this address to get a `false` verification
 // const claimingAddress = keccak256("0X5B38DA6A701C568545DCFCB03FCB875F56BEDDD6");
 
